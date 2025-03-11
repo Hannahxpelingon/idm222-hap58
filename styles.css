@@ -1,0 +1,565 @@
+ :root {
+    --blue: #1B2030;
+    --ivory: #EBEAE5;
+    --gray: #F1F1F1;
+    --yellow: #F1D1A4;
+    --lightBlue: #A0BADB;
+ }
+ 
+ html {
+    background-color: var(--ivory);
+    color: var(--blue);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: satoshi;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 80px 2fr auto;
+    grid-template-columns: 60px 4fr 60px;
+    height: auto;
+    grid-template-areas:
+        "header header header"
+        "left mainContainer right"
+        "footer footer footer";
+    grid-gap: 10px ;
+}
+
+/* header styles */
+.header {
+    background-color: #1B2030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color:#EBEAE5;
+    display: inline-block;
+    margin: 1rem;
+    font-weight: 400;
+}
+
+#book_btn {
+    border: 2px solid var(--yellow);
+    padding: 10px 15px;
+    background-color: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--yellow)
+}
+
+#book_btn:hover {
+    background-color: var(--yellow);
+    color:  #1B2030;
+}
+
+/* header styles */
+
+.left {
+    background-color: var(--ivory);
+    grid-area: left;
+}
+
+.right {
+    background-color: var(--ivory);
+    grid-area: right;
+}
+
+
+.contact-container, .about-container, .services-container, .home-container {
+    margin-top: 5em;
+    grid-area: mainContainer;
+}
+
+
+/* footer styles */
+footer {
+    grid-area: footer;
+    display: inline;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+footer > * {
+    margin-bottom: 1em;
+}
+
+footer > img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+footer > p { 
+    font-size: 12px;
+}
+/* footer styles */
+
+
+
+
+/* Contact Page */
+
+.inquiry-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.inquiry-image{
+    width: 50%;
+}
+
+.inquiry-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    color:var(--ivory);
+}
+
+.inquiry-info {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.inquiry-info > h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.inquiry-info > p {
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+    /*location*/
+    .location-container {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .location-info {
+        margin: 6rem 0;
+    }
+
+    .location-info > h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    .location-info > p {
+        font-size: 14px;
+        margin-bottom: 1em;
+    }
+
+    .location-map{
+        margin: 6rem 0;
+    }
+
+    iframe {
+        width: 80%;
+        height: 400px;
+    }
+
+/* ABOUT US PAGE */
+
+.bg-image {
+    /*
+    width: 100%;
+    filter: grayscale(100%) contrast(50%);
+    */
+    display: none;
+}
+
+.fg-image {
+   /* width: 100%; */ 
+   display: none;
+}
+
+.feature-container {
+    text-align: center;
+    max-width: 954px;
+    margin: auto;
+    margin-bottom: 3em 0;
+}
+
+.feature-container > h2{
+    font-size: 42px;
+    margin-bottom: 1em;
+}
+
+h2 > span, h1 > span {
+    color: var(--lightBlue);
+    font-family: "sloop-script-one", sans-serif;
+    font-size: 76px;
+    font-weight: 400;
+}
+
+.feature-container > h3{
+    font-size: 18px;
+}
+
+/* staff cards */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.stylist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 930px;
+    margin: auto;
+}
+.stylist-card {
+     /*background-color: pink;*/
+     margin: 2em 0;
+     padding: 10px;
+     width: 300px;
+     height: auto;
+}
+
+.stylist-card > img {
+    width: 100%;
+    height: auto;
+    border-radius: 500px 500px 0 0;
+    margin-bottom: 1em;
+}
+
+.stylist-card > h4 {
+    font-size: 24px;
+}
+
+/* Services Page */
+
+.service-title{
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 28px;
+}
+
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-feature > img {
+    width: 100%; /* how to span this to the whole page */
+    height: auto;
+}
+
+/* add the image later */
+
+.services-feature {
+    text-align: center;
+    max-width: 954px;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.services-feature > h1{
+    font-size: 42px;
+    margin-bottom: 0.8em;
+}
+
+.services-feature > h2{
+    font-size: 18px;
+}
+
+.services-menu, .service-carousel, .waxing-feature {
+    margin-bottom: 100px;
+}
+
+
+/*
+.services-feature {
+    position: relative;
+}
+
+/*
+.services-feature > h1 {
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+}
+*/
+
+/* Start of Cards */ 
+
+.services-card1, .services-card2 {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--lightBlue); 
+    padding: 3rem;
+}
+
+.services-card2{
+    background-color: var(--yellow);
+    width: 450px;
+}
+
+.haircut-group, .color-group {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--blue);
+}
+
+.haircut-group > h4, .color-group > h4 {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.haircut-price {
+    margin-top: 30px;
+}
+
+.haircut-price > h3, .haircut-price-group > h3, .blow-price-group > h3, .color-price > h3, .color-price-group > h3, .color-price-groups > h3{
+    font-size: 16px;
+}
+
+.first {
+    margin-top: 2px;
+}
+
+.blow-price-group {
+    margin-top: 52px;
+}
+
+.haircut-price-group, .blow-price-group {
+    margin-bottom: 22px;
+}
+
+.color-price {
+    margin-top: 4px;
+    text-align: right;
+}
+
+.color-price-group, .color-price-groups {
+    margin-bottom: 25px;
+}
+
+.color-price-group-special {
+    margin-bottom: 46px;
+}
+
+.services-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.service-carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chemical-card {
+    background-color: var(--lightBlue);
+     padding: 10px;
+     width: 200px;
+     height: auto;
+     border-radius: 2px;
+}
+
+.waxing-feature, .wax-service{
+    display: flex;
+    flex-direction: row;
+}
+
+.waxing-feature > img {
+    filter: grayscale(100%) contrast(90%);
+}
+
+.wax-service {
+    column-gap: 4rem;
+}
+
+.wax-breakdown {
+    margin: auto;
+}
+
+.wax-areas > h3, .wax-prices > h3 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.specialty-feature {
+    display: flex;
+    flex-direction: row;
+}
+
+.specialty-card {
+     padding: 20px;
+     width: 350px;
+     height: auto;
+     border-radius: 2px;
+     margin-bottom: 4em;
+}
+
+.specialty-card > img {
+    width: 100%;
+    height: 50%;
+    border-radius: 500px 100px 0 0;
+    filter: contrast(60%);
+    margin-bottom: 1em;
+}
+
+#japanese {
+    border-radius: 100px 100px 0 0;
+}
+
+#digital {
+    border-radius: 100px 500px 0 0;
+}
+
+.specialty-card > h2 {
+    margin-bottom: 1em;
+    color: var(--lightBlue);
+    background-color: var(--blue);
+    padding: 10px;
+}
+
+.specialty-card > p {
+    margin-bottom: 1em;
+}
+
+
+/* Home Page */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.mission-feature {
+    text-align: center;
+    max-width: 954px;
+    margin-bottom: 3em;
+}
+
+.mission-feature > h3 {
+    max-width: 650px;
+    margin: auto;
+}
+/* Team Feature */
+    .team-feature {
+        position: relative;
+    }
+
+    .team-feature > img {
+        display: block;
+        max-width: 80vh;
+        height: auto;
+        margin: auto;
+    }
+
+    .text-block {
+        width: 250px;
+        padding: 2rem;
+        position: absolute;
+        top: -14%;
+        right: 15px;
+        background-color: var(--lightBlue);
+        color: var(--ivory);
+        text-align: center;
+    }
+
+
+
+    /* Quick Book Feature */
+    .book-feature {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        max-width: 930px;
+        margin: auto;
+    }
+
+    .book-card {
+        margin: 2em 0;
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-text {
+        min-height: 184px;
+        background-color: var(--yellow);
+        padding:20px;
+        display: grid;
+        grid-template-columns: 3fr 4em;
+        grid-template-rows: 20px 50px 1fr;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .book-text > h4 {
+        grid-column: 1;
+    }
+
+    .length {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .price {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #quick-book-btn {
+        display: inline-block;
+        padding: 8px 16px;
+        border: 2px solid var(--blue);
+        color:var(--blue);
+        margin-top: 16px;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #quick-book-btn:hover{
+    background-color: var(--blue);
+    color: var(--yellow);
+    }
+
+
+    .book-card > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Salon feature slider */
+
+   .slide-content > img {
+    display: block;
+    margin: auto;
+    width: 100vh;
+    height: auto;
+   }
