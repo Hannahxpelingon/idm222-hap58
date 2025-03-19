@@ -121,6 +121,7 @@ footer {
     margin: auto;
     text-align: center;
     margin-bottom: 1.5em;
+    padding-top: 100px;
 }
 
 footer > * {
@@ -318,7 +319,7 @@ h2 > span, h1 > span {
     font-size: 18px;
 }
 
-.services-menu, .service-carousel, .waxing-feature {
+.services-menu, .chemical-carousel, .waxing-feature {
     margin-bottom: 100px;
 }
 
@@ -392,7 +393,7 @@ h2 > span, h1 > span {
 
 .chemical-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 950px;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
@@ -478,6 +479,7 @@ h2 > span, h1 > span {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .specialty-card {
