@@ -484,14 +484,12 @@ h2 > span, h1 > span {
 .specialty-feature {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+    justify-content: space-between;
 }
 
 .specialty-card {
      padding: 20px;
-     width: 320px;
+     width: 400px;
      height: auto;
      border-radius: 2px;
      margin-bottom: 4em;
