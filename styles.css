@@ -21,14 +21,6 @@
     font-weight: bold;
     font-style: normal;
    }
-
-   @font-face {
-    font-family: 'Satoshi';
-    src: url('fonts/Satoshi-Bold.woff2') format('woff2'),
-         url('fonts/Satoshi-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-   }
  
  :root {
     --blue: #1B2030;
@@ -78,14 +70,14 @@ nav > a {
     color:#EBEAE5;
     display: inline-block;
     margin: 1rem;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 #book_btn {
     border: 2px solid var(--yellow);
     padding: 10px 15px;
     background-color: transparent;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     color: var(--yellow)
 }
@@ -240,7 +232,7 @@ h2 > span, h1 > span {
     color: var(--lightBlue);
     font-family: "sloop-script-one", sans-serif;
     font-size: 76px;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .feature-container > h3{
