@@ -29,10 +29,6 @@
     font-weight: bold;
     font-style: normal;
    }
-
-
-
-   
  
  :root {
     --blue: #1B2030;
@@ -51,7 +47,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: satoshi;
+    font-family: "Satoshi", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
