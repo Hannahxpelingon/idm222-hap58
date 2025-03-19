@@ -53,23 +53,25 @@
 
 .container {
     display: grid;
-    grid-template-rows: 80px 2fr auto;
+    grid-template-rows: 80px auto 2fr auto;
     grid-template-columns: 60px 4fr 60px;
     height: auto;
     grid-template-areas:
         "header header header"
-        "left mainContainer right"
+        "hero hero hero"
+        "mainContainer mainContainer mainContainer"
         "footer footer footer";
-    grid-gap: 10px ;
+    /* grid-gap: 10px ; */
 }
+
 
 /* header styles */
 .header {
+    grid-area: header;
     background-color: #1B2030;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-area: header;
     padding: 10px;
 }
 
@@ -110,6 +112,7 @@ nav > a {
 
 .contact-container, .about-container, .services-container, .home-container {
     margin-top: 5em;
+    padding: 0 60px;
     grid-area: mainContainer;
 }
 
@@ -522,10 +525,24 @@ h2 > span, h1 > span {
 
 
 /* Home Page */
+
 .home-container {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    margin-top: 0;
+}
+
+.hero-feature{
+    grid-area: hero;
+    background-image: url(imagesHome/Group.jpg);
+    background-color: var(--ivory);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 100px;
 }
 
 .mission-feature {
