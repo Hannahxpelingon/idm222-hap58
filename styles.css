@@ -51,7 +51,6 @@
     font-family: "Satoshi", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 .container {
     display: grid;
     grid-template-rows: 80px 2fr auto;
@@ -477,15 +476,19 @@ h2 > span, h1 > span {
 .specialty-feature {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .specialty-card {
      padding: 20px;
-     width: 350px;
+     width: 320px;
      height: auto;
      border-radius: 2px;
      margin-bottom: 4em;
 }
+
+/* for tablet make a smaller version with small images */
 
 .specialty-card > img {
     width: 100%;
@@ -493,6 +496,7 @@ h2 > span, h1 > span {
     border-radius: 500px 100px 0 0;
     filter: contrast(60%);
     margin-bottom: 1em;
+    object-fit: cover;
 }
 
 #japanese {
