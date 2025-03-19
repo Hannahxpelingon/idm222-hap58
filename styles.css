@@ -274,7 +274,7 @@ h2 > span, h1 > span {
     font-size: 24px;
 }
 
-/* Services Page */
+/* SERVICES AND SPECIALTIES */
 
 .service-title{
     color: var(--blue);
@@ -293,7 +293,6 @@ h2 > span, h1 > span {
     height: auto;
 }
 
-/* add the image later */
 
 .services-feature {
     text-align: center;
@@ -357,7 +356,7 @@ h2 > span, h1 > span {
 }
 
 .haircut-price {
-    margin-top: 30px;
+    margin-top: 28px;
 }
 
 .haircut-price > h3, .haircut-price-group > h3, .blow-price-group > h3, .color-price > h3, .color-price-group > h3, .color-price-groups > h3{
@@ -395,6 +394,8 @@ h2 > span, h1 > span {
     justify-content: space-around;
 }
 
+/* Chemical Section */
+
 .service-carousel {
     display: flex;
     flex-direction: row;
@@ -404,12 +405,17 @@ h2 > span, h1 > span {
 
 .chemical-card {
     background-color: var(--lightBlue);
-     padding: 10px;
-     width: 200px;
+     padding: 30px;
+     width: 400px;
      height: auto;
-     border-radius: 2px;
+     border-radius: 5px;
 }
 
+.chemical-card > p {
+    margin-top: 15px;
+}
+
+/* Waxing Section */
 .waxing-feature, .wax-service{
     display: flex;
     flex-direction: row;
@@ -431,6 +437,8 @@ h2 > span, h1 > span {
     margin-bottom: 5px;
     font-weight: 500;
 }
+
+/* Specialty cards */
 
 .specialty-feature {
     display: flex;
