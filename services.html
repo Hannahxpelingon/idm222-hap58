@@ -24,7 +24,6 @@
 
     <div class="services-container">
             <div class="services-feature">
-               <!-- <img src="imagesServices/interior.jpg" alt="salon interior"> -->
                 <h1>Our <span>Services</span></h1>
                 <h2>Our salon is dedicated to creating a welcoming environment for every guest.By providing personalized services tailored to everyone's unique needs and preferences, we're dedicated to helping our guests achieve their absolute hair goals.
                 </h2>
@@ -157,7 +156,9 @@
 
             
             <h2 class="service-title">Chemical Services</h2>
-            <div class="service-carousel">
+        <div class="chemical-container">
+            <button class="left-arrow">&lt;</button>
+            <div class="chemical-carousel">
                 <div class="chemical-card">
                     <h3>Standard Perm</h3>
                     <p>A standard perm at our salon creates long-lasting, voluminous curls or waves, adding body and texture for a beautifully styled look.</p>
@@ -214,6 +215,9 @@
                     <p>$60+</p>
                 </div>
             </div>
+            <button class="right-arrow">&gt;</button>
+        </div>
+            
 
              <div class="waxing-feature">
                 <img src="imagesServices/waxing.jpg" alt="leg waxing">
@@ -298,5 +302,20 @@
         <p>318 W Swedesford Rd, Berwyn PA 1931</p>
         <p>Copyright &copy; BadHairDay LLC 2025</p>
     </footer>
+
+    <script>
+        const wrapper  = document.querySelector('.chemical-carousel');
+        const leftArrow  = document.querySelector('.left-arrow');
+        const rightArrow  = document.querySelector('.right-arrow');
+        const cardWidth  = document.querySelector('.chemical-card').offsetWidth + 20;
+        
+        rightArrow.addEventListener('click', () => {
+            wrapper.scrollLeft += cardWidth
+        });
+        leftArrow.addEventListener('click', () => {
+            wrapper.scrollLeft -= cardWidth
+        });
+    </script>
+
 </body>
 </html>

@@ -21,6 +21,15 @@
     font-weight: bold;
     font-style: normal;
    }
+
+   /* Backup span font */
+   @font-face {
+    font-family: 'Adediala';
+    src: url('fonts/Adediala.woff2') format('woff2'),
+         url('fonts/Adediala.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+   }
  
  :root {
     --blue: #1B2030;
@@ -230,8 +239,8 @@ footer > p {
 
 h2 > span, h1 > span {
     color: var(--lightBlue);
-    font-family: "sloop-script-one", sans-serif;
-    font-size: 76px;
+    font-family: "sloop-script-one", 'Adediala', sans-serif;
+    font-size: 90px;
     font-weight: normal;
 }
 
@@ -314,24 +323,11 @@ h2 > span, h1 > span {
     margin-bottom: 100px;
 }
 
-
-/*
-.services-feature {
-    position: relative;
-}
-
-/*
-.services-feature > h1 {
-    position: absolute;
-    bottom:10px;
-    left: 10px;
-}
-*/
-
 /* Start of Cards */ 
 
 .services-card1, .services-card2 {
-    width: 400px;
+    width: 450px;
+    min-height: 757px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -341,7 +337,6 @@ h2 > span, h1 > span {
 
 .services-card2{
     background-color: var(--yellow);
-    width: 450px;
 }
 
 .haircut-group, .color-group {
@@ -396,19 +391,58 @@ h2 > span, h1 > span {
 
 /* Chemical Section */
 
-.service-carousel {
+.chemical-container {
+    position: relative;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.chemical-carousel {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.chemical-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .chemical-card {
     background-color: var(--lightBlue);
-     padding: 30px;
-     width: 400px;
+     padding: 20px;
+     flex: 0 0 400px;
      height: auto;
      border-radius: 5px;
+}
+
+.left-arrow, .right-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.left-arrow{
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.left-arrow:hover, .right-arrow:hover{
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .chemical-card > p {
