@@ -400,10 +400,11 @@ h2 > span, h1 > span {
 
 .chemical-container {
     position: relative;
-    max-width: 950px;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .chemical-carousel {
@@ -457,6 +458,10 @@ h2 > span, h1 > span {
 }
 
 /* Waxing Section */
+.waxing-feature{
+    background-color: rgba(160, 186, 219, 0.4);
+}
+
 .waxing-feature, .wax-service{
     display: flex;
     flex-direction: row;
