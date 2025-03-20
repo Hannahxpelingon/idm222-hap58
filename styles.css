@@ -632,8 +632,8 @@ h2 > span, h1 > span {
     text-align: center;
     max-width: 954px;
     margin: auto;
-    margin-top: 6em;
-    margin-bottom: 6em;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .mission-feature > h3 {
