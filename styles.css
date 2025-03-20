@@ -363,7 +363,7 @@ h2 > span, h1 > span {
 }
 
 .services-feature > img {
-    width: 100%; /* how to span this to the whole page */
+    width: 100%;
     height: auto;
 }
 
@@ -629,11 +629,11 @@ h2 > span, h1 > span {
 
 
 .mission-feature {
-    display: flex;
-    justify-content: center;
     text-align: center;
     max-width: 954px;
-    margin: 6em 0;
+    margin: auto;
+    margin-top: 6em 0;
+    margin-bottom: 6em 0;
 }
 
 .mission-feature > h3 {
