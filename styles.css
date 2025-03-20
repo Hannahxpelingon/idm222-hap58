@@ -253,7 +253,7 @@ footer > p {
     }
 
     .location-info {
-        margin: 6rem 0;
+        margin: 6em 0;
     }
 
     .location-info > h1 {
@@ -267,7 +267,7 @@ footer > p {
     }
 
     .location-map{
-        margin: 6rem 0;
+        margin: 6em 0;
     }
 
     iframe {
@@ -353,7 +353,7 @@ h2 > span, h1 > span {
 .service-title{
     color: var(--blue);
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     font-size: 28px;
 }
 
@@ -397,7 +397,7 @@ h2 > span, h1 > span {
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--lightBlue); 
-    padding: 3rem;
+    padding: 3em;
 }
 
 .services-card2{
@@ -533,7 +533,7 @@ h2 > span, h1 > span {
 }
 
 .wax-service {
-    column-gap: 4rem;
+    column-gap: 4em;
 }
 
 .wax-breakdown {
@@ -597,7 +597,7 @@ h2 > span, h1 > span {
 .home-container {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 5em;
     margin-top: 0;
 }
 
@@ -629,6 +629,8 @@ h2 > span, h1 > span {
 
 
 .mission-feature {
+    display: flex;
+    justify-content: center;
     text-align: center;
     max-width: 954px;
     margin: 6em 0;
