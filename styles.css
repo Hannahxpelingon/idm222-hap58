@@ -602,7 +602,7 @@ h2 > span, h1 > span {
 
 .hero-feature{
     grid-area: hero;
-    background-image: url(imagesHome/Group.jpg);
+    background-image: url(imagesHome/groupMedium.jpg);
     background-color: var(--ivory);
     height: 90vh;
     background-position: center;
