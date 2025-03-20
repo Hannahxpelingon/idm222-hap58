@@ -168,7 +168,6 @@
 
 /* header styles */
 .contact-container, .about-container, .services-container, .home-container {
-    /* margin-top: 5em; */
     padding: 0 60px;
     grid-area: mainContainer;
 }
@@ -610,16 +609,21 @@ h2 > span, h1 > span {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    /* margin-bottom: 80px; */
 }
 
 .hero-text {
+    width: 100%;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--ivory)
+    color: var(--ivory);
+}
+
+.hero-text > * {
+    margin-bottom: 10px;
+    color:var(--yellow)
 }
 
 .hero-text > a {
@@ -627,6 +631,14 @@ h2 > span, h1 > span {
     margin-top: 10px;
 }
 
+.hero-text > h1 {
+    font-size: 48px;
+}
+
+.hero-text > h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
 
 .mission-feature {
     text-align: center;
@@ -735,3 +747,76 @@ h2 > span, h1 > span {
         height: 300px;
         object-fit: cover;
     }
+
+
+/* media queries */
+@media only screen and (min-width: 320px) and (max-width: 700px){
+
+    /* Contact Page */
+    .inquiry-container {
+        flex-direction: column; 
+    }
+    .inquiry-image, .waxing-feature > img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .inquiry-info, .wax-breakdown{
+        margin: 40px 30px;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    /* Services */
+
+    .specialty-feature {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    .specialty-card {
+        margin: 0;
+    }
+
+    #japanese, #digital, #keratin{
+        border-radius: 500px 500px 0 0;
+    }
+    
+    .waxing-feature {
+        flex-direction: column;
+    }
+
+    .wax-service {
+        justify-content: center;
+    }
+
+    /* About */
+    .stylist-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 1021px) {
+    .services-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .service-title {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-container, .about-container, .services-container, .home-container {
+        padding: 0 30px;
+    }
+}
