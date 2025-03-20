@@ -421,7 +421,7 @@ h2 > span, h1 > span {
 
 .chemical-card {
     background-color: var(--lightBlue);
-     padding: 20px;
+     padding: 35px;
      flex: 0 0 400px;
      height: auto;
      border-radius: 5px;
