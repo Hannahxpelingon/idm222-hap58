@@ -277,15 +277,10 @@ footer > p {
 /* ABOUT US PAGE */
 
 .bg-image {
-    /*
-    width: 100%;
-    filter: grayscale(100%) contrast(50%);
-    */
     display: none;
 }
 
 .fg-image {
-   /* width: 100%; */ 
    display: none;
 }
 
@@ -329,7 +324,6 @@ h2 > span, h1 > span {
     margin: auto;
 }
 .stylist-card {
-     /*background-color: pink;*/
      margin: 2em 0;
      padding: 10px;
      width: 300px;
@@ -663,18 +657,6 @@ h2 > span, h1 > span {
         height: auto;
         display: block;
     }
-
-    /* .text-block {
-        position: absolute;
-        width: 250px;
-        padding: 2em;
-        top: 20px;
-        right: 20px;
-        background-color: var(--lightBlue);
-        color: var(--ivory);
-        line-height: 1.2;
-        text-align: center;
-    } */
 
 
     /* Quick Book Feature */
