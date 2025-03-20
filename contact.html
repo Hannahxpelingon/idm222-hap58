@@ -7,84 +7,86 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<header class="header">
-    <a href="index.html">
-        <img src="imagesHeader/Logo SVG.svg" alt="Bad Hair Day Logo">
-    </a>
-    <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-
-    <nav class="nav-bar">
-        <ul>
-            <li>
-                <a class="active" href="about.html" >About Us</a>
-            </li>
-            <li>
-                <a href="services.html">Services and Specialties</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a id="book_btn">Book Now</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<body class="container">
-<div class="contact-container">
-            <div class="inquiry-container">
-                <div class="inquiry-image">
-                    <img srcset="imagesContact/inquiryMedium.png 1204w, imagesContact/inquirySmall.png 360w" 
-                    sizes="(max-width: 480px) 360px, 1204px"
-                    src="imagesContact/inquirySmall.png"
-                    alt="abstract figures" />
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="imagesHeader/logoLight.svg" alt="Bad Hair Day Logo">
+        </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a class="active" href="about.html" >About Us</a>
+                </li>
+                <li>
+                    <a href="services.html">Services and Specialties</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a id="book-btn">Book Now</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+    <div class="contact-container">
+                <div class="inquiry-container">
+                    <div class="inquiry-image">
+                        <img srcset="imagesContact/inquiryMedium.png 1204w, imagesContact/inquirySmall.png 360w" 
+                        sizes="(max-width: 480px) 360px, 1204px"
+                        src="imagesContact/inquirySmall.png"
+                        alt="abstract figures" />
+                    </div>
+                    <div class="inquiry-info">
+                        <h1>Inquiry</h1>
+                        <p>318 W Swedesford Rd, Berwyn PA 1931</p>
+                        <p class="underline">(484)-318-7466</p>
+                        <p class="underline">Badhairdaypa@gmail.com</p>
+                    </div>
                 </div>
-                <div class="inquiry-info">
-                    <h1>Inquiry</h1>
-                    <p>318 W Swedesford Rd, Berwyn PA 1931</p>
-                    <p class="underline">(484)-318-7466</p>
-                    <p class="underline">Badhairdaypa@gmail.com</p>
+               
+                <div class="location-container">
+                    <div class="location-info">
+                        <h1>Business Hours</h1>
+                        <p>Monday-Thurs: 10AM - 7PM</p>
+                        <p>Friday: 9AM - 8PM</p>
+                        <p>Saturday: 9AM - 7PM</p>
+                        <p>Sunday: 10AM - 5PM</p>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6106.517490867113!2d-75.4468269600934!3d40.06964017681077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6937a38bd01bd%3A0x57bd715726467d09!2sBad%20Hair%20Day!5e0!3m2!1sen!2sus!4v1739830549729!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-            </div>
-           
-            <div class="location-container">
-                <div class="location-info">
-                    <h1>Business Hours</h1>
-                    <p>Monday-Thurs: 10AM - 7PM</p>
-                    <p>Friday: 9AM - 8PM</p>
-                    <p>Saturday: 9AM - 7PM</p>
-                    <p>Sunday: 10AM - 5PM</p>
-                </div>
-                <div class="location-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6106.517490867113!2d-75.4468269600934!3d40.06964017681077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6937a38bd01bd%3A0x57bd715726467d09!2sBad%20Hair%20Day!5e0!3m2!1sen!2sus!4v1739830549729!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <img src="imagesHeader/logoDark.svg" alt="logo dark version">
+        <div class ="footer-socials">
+            <img src="imagesHeader/instagramIcon.svg" alt="Instagram Icon">
+            <img src="imagesHeader/facebookIcon.svg" alt="Facebook Icon">
+        </div>
+        <p>(484)-318-7466</p>
+        <p>318 W Swedesford Rd, Berwyn PA 1931</p>
+        <p>Copyright &copy; BadHairDay LLC 2025</p>
+    </footer>
+    
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            const navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    
 </body>
-
-<footer>
-    <img src="imagesHeader/logoDark.svg" alt="logo dark version">
-    <div class ="footer-socials">
-        <img src="imagesHeader/instagramIcon.svg" alt="Instagram Icon">
-        <img src="imagesHeader/facebookIcon.svg" alt="Facebook Icon">
-    </div>
-    <p>(484)-318-7466</p>
-    <p>318 W Swedesford Rd, Berwyn PA 1931</p>
-    <p>Copyright &copy; BadHairDay LLC 2025</p>
-</footer>
-
-<script>
-    const hamburger = document.querySelector(".hamburger");
-    hamburger.onclick = function(){
-        const navBar = document.querySelector(".nav-bar");
-        navBar.classList.toggle("active");
-    }
-</script>
-
 </html>
