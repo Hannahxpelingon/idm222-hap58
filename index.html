@@ -12,11 +12,27 @@
     <a href="index.html">
         <img src="imagesHeader/Logo SVG.svg" alt="Bad Hair Day Logo">
     </a>
-    <nav class="navbar">
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services and Specialties</a>
-        <a href="contact.html">Contact</a>
-        <a id="book_btn">Book Now</a>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a class="active" href="about.html" >About Us</a>
+            </li>
+            <li>
+                <a href="services.html">Services and Specialties</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a id="book_btn">Book Now</a>
+            </li>
+        </ul>
     </nav>
 </header>
 
@@ -35,10 +51,10 @@
             <h3>Our mission is to provide exceptional hair care and styling, enhancing natural beauty with quality products, innovative techniques, and a welcoming experience.</h3>
         </div>
         <div class="team-feature">
-            <img src="imagesHome/stylistCutMedium.jpg" alt="hairstylist cutting">
-            <div class="text-block">
+            <img class="team-image" src="imagesHome/stylistCutMedium.jpg" alt="hairstylist cutting">
+            <!-- <div class="text-block">
                 <h3>Transforming hair, elevating confidence</h3>
-            </div>
+            </div> -->
         </div>
         <div class="book">
             <h2>Quick <span>Book</span></h2>
@@ -100,4 +116,11 @@
     <p>Copyright &copy; BadHairDay LLC 2025</p>
 </footer>
 
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function(){
+        const navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
 </html>  

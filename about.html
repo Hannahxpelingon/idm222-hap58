@@ -12,11 +12,27 @@
     <a href="index.html">
         <img src="imagesHeader/Logo SVG.svg" alt="Bad Hair Day Logo">
     </a>
-    <nav class="navbar">
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services and Specialties</a>
-        <a href="contact.html">Contact</a>
-        <a id="book_btn">Book Now</a>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a class="active" href="about.html" >About Us</a>
+            </li>
+            <li>
+                <a href="services.html">Services and Specialties</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a id="book_btn">Book Now</a>
+            </li>
+        </ul>
     </nav>
 </header>
 
@@ -74,5 +90,13 @@
     <p>318 W Swedesford Rd, Berwyn PA 1931</p>
     <p>Copyright &copy; BadHairDay LLC 2025</p>
 </footer>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function(){
+        const navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
 
 </html>
